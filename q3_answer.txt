@@ -1,0 +1,15 @@
+The control system in this question can be assumed
+to be a bang bang or on-off controller operating in a relay manner. 
+Zeno behaviour is known as an infinite number of steps of a variable
+within a finite amount of time and can often be difficult to control
+within a hybrid system. 
+
+When simulating a system with such a behaviour in Matlab
+it will cause a lot of "chatter" or oscillation around the operating point,
+which leads to the solver being unable to solve the system. This is observed
+in this simulation at around 1 second and therefore the system cannot be observed
+to be stable within the simulation.
+
+Judging by the later questions, i.e. question 4, it is likely that the system
+has an extremely small error oscillation around zero and is not asymptotically stable in theory.
+In pratice this will be an extremely small value.

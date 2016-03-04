@@ -1,0 +1,14 @@
+The control system in this question can be assumed
+to be a bang bang or on-off controller operating in a relay manner with a time delay. 
+The system appears to asymptotically stable in the simulation as theta does appear converge to
+to the zero value, the time delay added in this section now means that the system
+can be simulated unlike the first rotation simulation.
+
+The downside to this is that Zeno-like behaviour again develops, with continuous switching between control
+input of -1 and 1. Asymptotic stability cannot be shown under close observation as the output fluctuates
+between extremely small positive and negative numbers. This is not a montonically decreasing function
+so it cannot have finite value as time goes to infinity.
+
+This is not an infinite number of steps though clearly as the solver can now solve
+the simulation. This is, however, 
+extremely hard on the actuators and is behaviour that should be avoided.

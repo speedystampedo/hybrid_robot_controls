@@ -1,0 +1,15 @@
+When implementing the controller, as per figure x, 
+performance was only reasonable if using a gain value around 50x less
+than specified in Task 7, see figure y. The controller was unstable if using
+the values specified in Task 8 and up to around 5x less, as you can see in 
+figure z.
+
+This is likely a missing conversion factor at this point in time, however,
+it is also perfectly normal for the maximum theoretical value of gain
+to not be completely accurate when it comes to simulation of the system.
+
+When using the c code version of this algorithm in the robot simulator
+it was found that oscillation would occur using the calculated values. Adding
+a conversion factor of 1/100 gave reasonable performance, showing that the
+Matlab simulation gave the valuable insight that a conversion factor was
+required.

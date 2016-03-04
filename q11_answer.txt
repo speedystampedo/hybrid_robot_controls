@@ -1,0 +1,4 @@
+The result from the C controller is much like in q8, as the robot does not move off the spot.
+This seems like an overly perfect result, due to it being a simulation.
+
+When simulated in Matlab the following occurred.

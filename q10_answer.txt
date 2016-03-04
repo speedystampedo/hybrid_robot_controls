@@ -1,0 +1,11 @@
+When implementing the controller, as per figure x, 
+performance was only reasonable if using a gain value around x% less
+than specified in Task 9, see figure y. The controller was unstable if using
+the values specified in Task 9. This was only for the case of starting at some x
+and y values and moving to a reference value though, which is a different case
+as compared to the c robot simulator.
+
+When using the c code version of this algorithm in the robot simulator
+it was found that the robot does not move, which makes sense considering it is starting
+at x0 and y0 and the aim of this part of the controller is to not let the
+robot move from its x and y coordinates when it is rotating.

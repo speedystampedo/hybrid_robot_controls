@@ -1,0 +1,12 @@
+The control system in this question can be assumed
+to be a bang bang or on-off controller operating in a relay manner with a time delay
+and also a zero order hold representing sampling of the system. 
+The system is not asymptotically stable in that there is continued oscillation
+at a fixed amplitude and frequency of theta but it appears to be stable.
+
+This system does at least avoid the extremely quick oscillation of the control
+signal that was observed in previous simulations. Now the control signal only
+changes at the frequency of the sampler, i.e. the ZOH module.
+
+Unlike the previous question the frequency of the control signal oscillation
+does not increase, which was certainly a problem that could be observed.
